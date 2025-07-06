@@ -1,0 +1,54 @@
+/* mark-attendance.css */
+html, body {
+  height: 100%;
+  margin: 0;
+  background: url('../img/bg-slmb.png') no-repeat center center fixed;
+  background-size: cover;
+  font-family: sans-serif;
+}
+
+.center-container {
+  min-height: calc(100vh - 56px - 60px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.glass-box {
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 20px;
+  padding: 30px;
+  width: 100%;
+  max-width: 900px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.logout-btn {
+  color: #ffc107;
+  text-decoration: none;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  text-shadow: 0 0 8px #ffc107;
+}
+
+.logout-btn:hover {
+  color: #fff700;
+  text-shadow: 0 0 12px #fff700;
+}
+
+footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}

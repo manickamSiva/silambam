@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nethaji Silambam School</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-warning sticky-top shadow">
+    <div class="container-fluid d-flex justify-content-between align-items-center">
+      <div class="d-flex align-items-center position-relative">
+        <span class="navbar-brand fw-bold me-3" id="schoolName">Nethaji Silambam School</span>
+        <div class="dropdown-menu p-2 shadow" id="dropdown">
+          <a class="dropdown-item fw-bold" href="admin.html">Admin</a>
+          <a class="dropdown-item fw-bold" href="#">Logout</a>
+        </div>
+        <div class="profile-pic ms-3" id="profile"></div>
+        <input type="file" id="upload" accept="image/*" hidden />
+      </div>
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link fw-bold" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link fw-bold" href="#achievements">Achievements</a></li>
+        <li class="nav-item"><a class="nav-link fw-bold" href="#about">About</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="home" class="text-center py-5">
+    <div class="typewriter-container">
+      <h2 id="typewriterText" class="typewriter">Welcome to Nethaji Silambam School</h2>
+    </div>
+    <p class="quote">கற்போம் சிலம்பம், கார்போம் சிலம்பம் — சிலம்பம் வாழ்க</p>
+  </section>
+
+<!-- Add this section just BEFORE the Achievements Section -->
+<section id="quotes" class="py-5 bg-light">
+  <div class="container">
+    <h3 class="text-center mb-4">Inspirational Quotes</h3>
+    <div class="quote-slider position-relative">
+      <div class="quote-track d-flex">
+        <div class="quote-slide">
+          <div class="quote-content d-flex align-items-center gap-4">
+            <img src="qouet.png" class="freedom_photo" alt="Quote 1">
+            <p>
+              "கொட்டுக்கொட்டென்டு மேல் பொட்டிப் பகடையும் <br> கொல்வேன் என்றான் தடிக்கம்பாலே;<br> சட்டுச் சட்டென்று சிலம்ப வரிசைகள் <br> தட்டிவிட்டான் அங்கே பாரதன் வல்லை" -- கட்டபொம்மன்
+            </p>
+          </div>
+        </div>
+
+        <div class="quote-slide">
+          <div class="quote-content d-flex align-items-center gap-4">
+            <img src="quote2.png" class="freedom_photo" alt="Quote 2">
+            <p>
+              "மறு அல்லது மடு என்றும் அழைக்கப்படும் மட்டுவு இந்தியாவில் <br>இருந்து வந்த ஒரு ஆயுதம். 'சிலம்பம் தமிழ் தற்காப்பு கலைகளில்' பயன்படுப்பட்டப்படும் பல ஆயுதம்களில் இதுவும் ஒன்றாகும்."
+            </p>
+          </div>
+        </div>
+
+        <div class="quote-slide">
+          <div class="quote-content d-flex align-items-center gap-4">
+            <img src="quote3.png" class="freedom_photo" alt="Quote 3">
+            <p>
+              "மன்னர்கள் போர்களில் அதிகமாக உபயோகித்த ஒரு ஆயுதம் வேல் கம்பு. வேல் கம்பின் அடிப்படை சிலம்பம் ஆகும். எதிரிகள் எவ்வாரு நம்மை தாக்குவார்கள், அவர்களிடமெறுந்து எவ்வாரு தற்காத்து க்கொள்வது என்று பாடத்திட்டமாக சிலம்பம் உருவெடுத்தது."
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <button class="prev-btn"><i class="fas fa-chevron-left"></i></button>
+      <button class="next-btn"><i class="fas fa-chevron-right"></i></button>
+    </div>
+  </div>
+</section>
+
+  <!-- Achievements Section -->
+  <section id="achievements" class="text-center py-5">
+    <h3>Achievements</h3>
+    <p>Achievements content goes here...</p>
+    <div class="container">
+  <div class="row justify-content-center g-4">
+    <!-- Card 1 -->
+    <div class="col-md-4">
+      <div class="achievement-card">
+        <div class="card-img-top position-relative">
+          <img src="distric-slmb.jpg" class="img-fluid rounded" alt="Web Dev" />
+          <span class="badge bg-dark position-absolute bottom-0 end-0 m-2">District</span>
+        </div>
+        <div class="p-3">
+      <p class="mb-2 text-muted"> Our students have consistently showcased their skill, discipline, and dedication by actively participating in numerous inter-district Silambam matches held across Tamil Nadu matches...</p>
+      <button class="btn btn-sm btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modal1">Read more...</button>
+    </div>
+      </div>
+    </div>
+<!-- Modal 1 -->
+<div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
+  <div class="modal-dialog modal-fullscreen">
+    <div class="modal-content">
+      <div class="modal-header bg-warning">
+        <h5 class="modal-title" id="modal1Label">District Achievements</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body text-start p-4">
+        <p>
+          Our students have consistently showcased their skill, discipline, and dedication by actively participating in numerous inter-district Silambam matches held across Tamil Nadu. From the bustling grounds of Madurai to the serene arenas of Coimbatore, our young warriors have represented Nethaji Silambam School with unwavering spirit and valor...
+        </p>
+        <!-- Full paragraph continues -->
+      </div>
+    </div>
+  </div>
+</div>
+
+    <!-- Card 2 -->
+    <div class="col-md-4">
+      <div class="achievement-card">
+        <div class="card-img-top position-relative">
+          <img src="national-slmb.jpg" class="img-fluid rounded" alt="Web Design" />
+          <span class="badge bg-dark position-absolute bottom-0 end-0 m-2">National</span>
+        </div>
+       <div class="p-3">
+      <p class="mb-2 text-muted"> Our students have consistently showcased their skill, discipline, and dedication by actively participating in numerous inter-district Silambam matches held across Tamil Nadu matches...</p>
+      <button class="btn btn-sm btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modal2">Read more...</button>
+    </div>
+      </div>
+    </div>
+    <!-- Modal 2 -->
+<div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
+  <div class="modal-dialog modal-fullscreen">
+    <div class="modal-content">
+      <div class="modal-header bg-warning">
+        <h5 class="modal-title" id="modal1Label">National Achievements</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body text-start p-4">
+        <p>
+          Our students have consistently showcased their skill, discipline, and dedication by actively participating in numerous inter-district Silambam matches held across Tamil Nadu. From the bustling grounds of Madurai to the serene arenas of Coimbatore, our young warriors have represented Nethaji Silambam School with unwavering spirit and valor...
+        </p>
+        <!-- Full paragraph continues -->
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <!-- Card 3 -->
+    <div class="col-md-4">
+      <div class="achievement-card">
+        <div class="card-img-top position-relative">
+          <img src="international-slmb.jpg" class="img-fluid rounded" alt="Graphic Design" />
+          <span class="badge bg-dark position-absolute bottom-0 end-0 m-2">Inter National</span>
+        </div>
+        <div class="p-3">
+      <p class="mb-2 text-muted"> Our students have consistently showcased their skill, discipline, and dedication by actively participating in numerous inter-district Silambam matches held across Tamil Nadu matches...</p>
+      <button class="btn btn-sm btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modal3">Read more...</button>
+    </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal 3 -->
+<div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
+  <div class="modal-dialog modal-fullscreen">
+    <div class="modal-content">
+      <div class="modal-header bg-warning">
+        <h5 class="modal-title" id="modal1Label">Inter-National Achievements</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body text-start p-4">
+        <p>
+          Our students have consistently showcased their skill, discipline, and dedication by actively participating in numerous inter-district Silambam matches held across Tamil Nadu. From the bustling grounds of Madurai to the serene arenas of Coimbatore, our young warriors have represented Nethaji Silambam School with unwavering spirit and valor...
+        </p>
+        <!-- Full paragraph continues -->
+      </div>
+    </div>
+  </div>
+</div>
+
+  </section>
+
+<!-- About Section -->
+<section id="about" class="text-center py-5">
+  <h3>About Us</h3>
+  <p>Learn more about our mission and values...</p>
+
+  <div class="container-fluid px-0">
+    <div class="a4-image-card">
+      <img src="img-master-slm.jpg" class="a4-full-image" alt="About Image">
+
+      <!-- Curved blur on right -->
+      <div class="right-blur"></div>
+
+      <!-- Text overlay on blur -->
+      <div class="text-overlay text-white text-start">
+        <h2 class="fw-bold">Empowering Youth Through Silambam</h2>
+        <p class="lead">
+          At Nethaji Silambam School, we are committed to nurturing not just martial artists, but disciplined, focused, and empowered individuals.
+          Our holistic approach to Silambam training instills physical agility, cultural pride, and mental strength in every student.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 🔄 Carousel START -->
+  <div class="carousel-container my-5">
+    <button class="carousel-btn img-prev-btn"><i class="fas fa-chevron-left"></i></button>
+    <div class="carousel">
+      <img src="ground_1.jpg" alt="School Ground 1" class="carousel-slide">
+      <img src="ground_2.jpeg" alt="School Ground 2" class="carousel-slide">
+    </div>
+    <button class="carousel-btn img-next-btn"><i class="fas fa-chevron-right"></i></button>
+  </div>
+  <!-- 🔄 Carousel END -->
+
+  <!-- 📞 Contact Info -->
+  <div class="glass-contact-box mt-5 mx-auto px-4 py-4 text-start">
+    <h5 class="fw-bold mb-3"><i class="bi bi-info-circle-fill me-2"></i>Contact Info</h5>
+    <p><i class="bi bi-telephone-fill me-2"></i><strong>Phone:</strong> +91-9876543210</p>
+    <p><i class="bi bi-envelope-fill me-2"></i><strong>Email:</strong> info@nethajisilambam.com</p>
+    <p><i class="bi bi-instagram me-2"></i><strong>Instagram:</strong> @nethajisilambam</p>
+    <p><i class="bi bi-geo-alt-fill me-2"></i><strong>Address:</strong> 123, Martial Arts Lane, Tamil Nadu</p>
+  </div>
+</section>
+
+
+
+
+  <!-- Footer -->
+  <footer class="footer text-center bg-warning py-3">
+    skdeveloper@2025
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>

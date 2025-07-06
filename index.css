@@ -1,0 +1,285 @@
+/* ========== Global ========== */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: white;
+  scroll-behavior: smooth;
+  padding-bottom: 80px;
+}
+
+.navbar {
+  background: linear-gradient(to right, orange, yellow);
+}
+
+.navbar-brand {
+  cursor: pointer;
+  position: relative;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 45px;
+  left: 0;
+  background: linear-gradient(to right, orange, yellow);
+  border-radius: 8px;
+  z-index: 1000;
+}
+
+.dropdown-item:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.profile-pic {
+  width: 40px;
+  height: 40px;
+  border: 2px solid black;
+  border-radius: 50%;
+  background-color: white;
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+}
+
+.typewriter-container {
+  width: fit-content;
+  margin: auto;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.typewriter {
+  font-size: 2rem;
+  color: black;
+  display: inline-block;
+  border-right: 2px solid black;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+  animation: typing 4s steps(40, end) forwards, blink 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
+.quote {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+/* ========== Footer ========== */
+footer.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: linear-gradient(to right, orange, yellow);
+  z-index: 999;
+}
+
+/* ========== Contact Box ========== */
+.glass-contact-box {
+  width: 90%;
+  max-width: 1000px;
+  background: linear-gradient(to right, rgba(255, 193, 7, 0.6), rgba(255, 165, 0, 0.6));
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.15);
+  color: black;
+}
+
+/* ========== Achievement Cards ========== */
+.achievement-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+}
+
+.achievement-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+.achievement-card img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+
+.achievement-card .badge {
+  font-size: 0.9rem;
+  padding: 0.4em 0.8em;
+}
+
+/* ========== A4 Image Card (About Section) ========== */
+.a4-image-card {
+  width: 75%;
+  height: 720px;
+  margin: 0 auto 40px auto;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  background-color: #000;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.a4-image-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.2);
+}
+
+.a4-full-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.right-blur {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 45%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(8px);
+  border-top-left-radius: 60% 100%;
+  border-bottom-left-radius: 60% 100%;
+  z-index: 1;
+}
+
+.text-overlay {
+  position: absolute;
+  top: 50%;
+  right: 40px;
+  transform: translateY(-50%);
+  z-index: 2;
+  max-width: 40%;
+  color: white;
+}
+
+/* ========== Responsive ========== */
+@media (max-width: 768px) {
+  .text-overlay {
+    position: static;
+    transform: none;
+    padding: 1rem;
+    max-width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(6px);
+    border-radius: 12px;
+    margin-top: -100px;
+    color: white;
+  }
+
+  .right-blur {
+    border-radius: 0;
+    width: 100%;
+  }
+
+  .a4-image-card {
+    height: auto;
+  }
+
+  .a4-full-image {
+    object-fit: contain;
+  }
+}
+
+/* ========== Quote Carousel ========== */
+.quote-slider {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.quote-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.quote-slide {
+  flex: 0 0 100%;
+  box-sizing: border-box;
+}
+
+.quote-slider .prev-btn,
+.quote-slider .next-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  border: none;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 50%;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.quote-slider .prev-btn {
+  left: 10px;
+}
+
+.quote-slider .next-btn {
+  right: 10px;
+}
+
+.freedom_photo {
+  width: 200px;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* ========== Image Carousel (Ground Images) ========== */
+.carousel-container {
+  position: relative;
+  max-width: 90%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+  min-width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Use unique button classes to avoid conflict */
+.carousel-container .img-prev-btn,
+.carousel-container .img-next-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.carousel-container .img-prev-btn {
+  left: 0;
+}
+
+.carousel-container .img-next-btn {
+  right: 0;
+}

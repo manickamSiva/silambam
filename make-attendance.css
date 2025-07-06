@@ -1,0 +1,82 @@
+/* Background and layout */
+html, body {
+  height: 100%;
+  margin: 0;
+  background: url('../img/bg-slmb.png') no-repeat center center fixed;
+  background-size: cover;
+  font-family: sans-serif;
+}
+
+/* Center glass box */
+.center-container {
+  height: calc(100vh - 56px - 60px); /* minus navbar + footer */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Glass effect card */
+.glass-box {
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 20px;
+  padding: 40px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: #000;
+  width: 350px;
+  text-align: center;
+}
+
+/* Heading */
+.glass-box h2 {
+  color: #000;
+  text-shadow: 0 0 8px #ffffff, 0 0 15px #ffc107;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Navbar branding */
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+/* Logout button styling */
+.logout-btn {
+  color: #ffc107;
+  text-decoration: none;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  text-shadow: 0 0 8px #ffc107;
+}
+
+.logout-btn:hover {
+  color: #fff700;
+  text-shadow: 0 0 12px #fff700;
+}
+
+/* Footer */
+footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Orange button used for both options */
+.btn-orange {
+  background-color: #ffc107;
+  color: #000;
+  border: 2px solid #ffc107;
+  font-weight: bold;
+  transition: 0.3s ease-in-out;
+}
+
+.btn-orange:hover {
+  background-color: #ffcd39;
+  border-color: #ffcd39;
+  color: #000;
+}

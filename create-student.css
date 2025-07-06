@@ -1,0 +1,86 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  background: url('../img/bg-slmb.png') no-repeat center center fixed;
+  background-size: cover;
+  font-family: sans-serif;
+}
+
+/* Center the form vertically and horizontally */
+.center-container {
+  height: calc(100vh - 56px - 60px); /* Full height minus navbar + footer */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Glassmorphism style card */
+.glass-box {
+  background: rgba(255, 255, 255, 0.6); /* increased opacity for better readability */
+  border-radius: 20px;
+  padding: 40px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  text-align: center;
+  color: #000; /* Set default text color to black */
+  width: 350px;
+}
+
+/* Heading style inside the form */
+.glass-box h2 {
+  color: #000;
+  text-shadow: 0 0 8px #ffffff, 0 0 15px #ffc107;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Navbar brand title */
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+/* Logout button */
+.logout-btn {
+  color: #ffc107;
+  text-decoration: none;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  text-shadow: 0 0 8px #ffc107;
+}
+
+.logout-btn:hover {
+  color: #fff700;
+  text-shadow: 0 0 12px #fff700;
+}
+
+/* Footer positioning */
+footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Form label color for readability */
+.glass-box label {
+  color: #000;
+  font-weight: 600;
+}
+
+/* Input and select styling for clear readability */
+.glass-box input,
+.glass-box select {
+  color: #000;
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 1px solid #ccc;
+}
+
+/* Success message after form submit */
+#message {
+  color: green;
+  font-weight: bold;
+}
